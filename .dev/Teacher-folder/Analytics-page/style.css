@@ -1,0 +1,48 @@
+*, *::after, *::before {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.exam-analytics-container {
+    padding: 1rem;
+}
+
+.exam-analytics-title {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    margin-bottom: .6rem;
+}
+.exam-analytics-title .fa-circle-check {
+    color: green;
+}
+.exam-analytics-title span {
+    margin-inline-end: .3rem;
+}
+.exam-analytics-title span:nth-child(2) {
+    text-transform: capitalize;
+}
+.exam-analytics-title span:nth-child(4), .exam-analytics-title span:nth-child(5) {
+    text-transform: uppercase;
+}
+.exam-analytics-title .fa-hourglass-start {
+    color: rgb(111, 16, 16);
+}
+
+.exam-analytics-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.exam-analytics-table td, .exam-analytics-table th{
+    border: 1px solid rgba(0,0,0,.3);
+}
+.exam-analytics-table thead th {
+    padding: .4rem;
+    background-color: rgba(177, 253, 253, 0.831);
+}
+.exam-analytics-table tbody td {
+    padding: .2rem .4rem;
+}
+.exam-analytics-table tbody tr:nth-child(2n) {
+    background-color: rgba(0,0,0,0.03);
+}

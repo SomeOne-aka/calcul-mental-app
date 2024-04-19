@@ -1,0 +1,88 @@
+*, ::after, ::before {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.profile-form {
+    /* border: 1px solid red; */
+    width: 90%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-block: 1rem 3rem;
+    /* margin-bottom: 3rem; */
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+}
+
+.form-controller {
+    margin-block: 1rem;
+}
+.form-controller > label {
+    width: max-content;
+    display: inline;
+}
+.form-controller > input {
+    display: inline-block;
+    width: 100%;
+    flex: 1;
+    padding: .3rem;
+    font-size: .8rem;
+    margin-top: .4rem;
+    background-color: #d7efff69;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    outline-color: rgb(19, 177, 194);
+}
+.scolar-saison {
+    margin-left: .5rem;
+    font-size: .9rem;
+}
+
+.action-btns {
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: 1rem;
+}
+
+/*JS Class*/
+.error {
+    background-color: #ff7f7fe0 !important;
+}
+.success {
+    background-color: #76feb7 !important;
+}
+
+@media (max-width: 660px) {
+    .form-container {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+}
+
+/*fname lname ppr not required*/
+label {
+    position: relative;
+}
+label[for="teacherLastName"]::after, label[for="teacherFirstName"]::after, label[for="teacherPPR"]::after {
+    content: "*";
+    position: absolute;
+    margin-left: .3rem;
+    color: red;
+}
+.non-obligatory-field-flag {
+    font-size: .7rem;
+    margin: .2rem 1rem;
+    width: fit-content;
+    margin-left: auto;
+}
+.non-obligatory-field-flag span {
+    font-size: 1.1rem;
+    color: red;
+    margin-right: .1rem;
+}

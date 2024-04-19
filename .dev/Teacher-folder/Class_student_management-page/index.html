@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes et Elèves management</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="./../Shared-folder-t/styles/shared-css.css" />
+    <link
+      rel="stylesheet"
+      href="./../../shared-folder-s-t/Icons/Fontawesome/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./../../shared-folder-s-t/multimedia/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./../../shared-folder-s-t/multimedia/favicon/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <!--Loading gif On page open Transition: to hide the gliching of main nav-->
+    <div class="loading-screen">
+      <img
+        src="./../../shared-folder-s-t/multimedia/loading-gif.gif"
+        class="loading-gif"
+        alt=""
+      />
+    </div>
+
+    <div class="wrapper">
+      <!--Toolbar Shared-->
+      <menu class="toolbar">
+        <!-- <img src="./../Shared-folder/Shared-multimedia/logo.jpg" class="logo-img" alt=""> -->
+        <ul>
+          <a target="_blank" href="https://www.roboy.tech/calcul-mental-app"
+            ><i class="fa-solid fa-circle-info fa-icon-main-nav"></i
+            ><span></span
+          ></a>
+          <a href="#" class="toggle-main-navigation"
+            ><img
+              src="./../../shared-folder-s-t/multimedia/sidebar-icon.png"
+              alt=""
+          /></a>
+          <a href="./../../../Quiz.html" class="page-eleve"
+            ><span>Page d'élève</span></a
+          >
+        </ul>
+      </menu>
+
+      <!--Main Navigation Shared-->
+      <nav class="main-navigation">
+        <a href="./../../../Dashboard.html"
+          ><i class="fa-solid fa-user fa-icon-main-nav"></i
+          ><span>Profile</span></a
+        >
+        <a href="./index.html" class="active"
+          ><i class="fa-solid fa-children fa-icon-main-nav"></i
+          ><span>Classes et Elèves</span></a
+        >
+        <a href="./../Exam_settings-page/index.html"
+          ><i class="fa-solid fa-clipboard-list fa-icon-main-nav"></i
+          ><span>Examens</span></a
+        >
+        <a href="./../Analytics-page/index.html"
+          ><i class="fa-solid fa-chart-column fa-icon-main-nav"></i
+          ><span>Statistiques</span></a
+        >
+        <a href="./../About_us-page/index.html"
+          ><i class="fa-solid fa-building fa-icon-main-nav"></i
+          ><span>À propos</span></a
+        >
+      </nav>
+
+      <!--Work Area Specific Content-->
+      <main class="work-area">
+        <div class="add-stg-container">
+          <input type="text" id="add-stg-input" placeholder="Exemple: 3AEP" />
+          <button id="add-stg-btn" data-type="classe">
+            Ajouter une classe
+          </button>
+        </div>
+
+        <ul class="tabs-container">
+          <!-- stg Tabs /-->
+        </ul>
+
+        <div class="stg-container">
+          <!-- stg-inner-container -->
+          <!-- Form -->
+          <!-- /Form -->
+
+          <!-- Student Table-->
+          <!-- /Student Table-->
+
+          <!-- action-btns -->
+          <!-- /action-btns -->
+          <!-- /stng-inner-container -->
+        </div>
+      </main>
+    </div>
+
+    <!--Scripts-->
+    <!--Import all related scripts from shared-folder-->
+    <script src="./../Shared-folder-t/scripts/pageSuccessionScreenAlert.js"></script>
+    <script src="./../Shared-folder-t/scripts/shared-js.js"></script>
+    <script src="./../Shared-folder-t/scripts/style-stg-tab.js"></script>
+    <script src="./../Shared-folder-t/scripts/success-alert.js"></script>
+    <script src="./../Shared-folder-t/scripts/confirm-delete.js"></script>
+    <script src="./../Shared-folder-t/scripts/uniqueid.js"></script>
+    <script src="./dependencies/xlsx.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

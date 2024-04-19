@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile D'enseignant</title>
+
+    <!--Styles-->
+    <link
+      rel="stylesheet"
+      href="./.dev/Teacher-folder/Shared-folder-t/styles/shared-css.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./.dev/shared-folder-s-t/Icons/Fontawesome/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./.dev/Teacher-folder/Teacher_profile-page/style.css"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./.dev/shared-folder-s-t/multimedia/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./.dev/shared-folder-s-t/multimedia/favicon/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <!--Loading gif On page open Transition: to hide the gliching of main nav-->
+    <div class="loading-screen">
+      <img
+        src="./.dev/shared-folder-s-t/multimedia/loading-gif.gif"
+        class="loading-gif"
+        alt=""
+      />
+    </div>
+
+    <div class="wrapper">
+      <!--Toolbar Shared-->
+      <menu class="toolbar">
+        <ul>
+          <a target="_blank" href="https://www.roboy.tech/calcul-mental-app"
+            ><i class="fa-solid fa-circle-info fa-icon-main-nav"></i
+          ></a>
+          <a href="#" class="toggle-main-navigation"
+            ><img
+              src="./.dev/shared-folder-s-t/multimedia/sidebar-icon.png"
+              alt=""
+          /></a>
+          <a href="./Quiz.html" class="page-eleve"><span>Page d'élève</span></a>
+        </ul>
+      </menu>
+
+      <!--Main Navigation Shared-->
+      <nav class="main-navigation">
+        <a href="./Dashboard.html" class="active"
+          ><i class="fa-solid fa-user fa-icon-main-nav"></i
+          ><span>Profile</span></a
+        >
+        <a href="./.dev/Teacher-folder/Class_student_management-page/index.html"
+          ><i class="fa-solid fa-children fa-icon-main-nav"></i
+          ><span>Classes et Elèves</span></a
+        >
+        <a href="./.dev/Teacher-folder/Exam_settings-page/index.html"
+          ><i class="fa-solid fa-clipboard-list fa-icon-main-nav"></i
+          ><span>Examens</span></a
+        >
+        <a href="./.dev/Teacher-folder/Analytics-page/index.html"
+          ><i class="fa-solid fa-chart-column fa-icon-main-nav"></i
+          ><span>Statistiques</span></a
+        >
+        <a href="./.dev/Teacher-folder/About_us-page/index.html"
+          ><i class="fa-solid fa-building fa-icon-main-nav"></i
+          ><span>À propos</span></a
+        >
+      </nav>
+
+      <!--Work Area Specific Content-->
+      <main class="work-area">
+        <div class="profile-form">
+          <div class="form-container">
+            <div class="left-content">
+              <div class="form-controller">
+                <label for="teacherLastName">Prénom de l'enseignant(e)</label>
+                <input
+                  autocomplete="one-time-code"
+                  required
+                  type="text"
+                  name="teacherFirstName"
+                  id="teacherLastName"
+                />
+              </div>
+
+              <div class="form-controller">
+                <label for="teacherFirstName">Nom de l'enseignant(e)</label>
+                <input
+                  autocomplete="one-time-code"
+                  required
+                  type="text"
+                  name="teacherLastName"
+                  id="teacherFirstName"
+                />
+              </div>
+
+              <div class="form-controller">
+                <label for="teacherPPR">N° PPR</label>
+                <input
+                  autocomplete="one-time-code"
+                  required
+                  type="text"
+                  name="teacherPPR"
+                  id="teacherPPR"
+                />
+              </div>
+
+              <div class="form-controller">
+                <label for="teachingSchool">Etablissement</label>
+                <input
+                  autocomplete="one-time-code"
+                  required
+                  type="text"
+                  name="teachingSchool"
+                  id="school"
+                />
+              </div>
+
+              <div class="form-controller">
+                <label for="teachingLevels">Niveau(x) enseigné(s)</label>
+                <div class="select-container">
+                  <div class="select-head teachingLevels">
+                    <p class="selected">Niveaux</p>
+                    <span class="arrow"
+                      ><i class="fa-solid fa-chevron-down"></i
+                    ></span>
+                  </div>
+                  <ul class="select-list">
+                    <li class="select-list-item">
+                      <span class="leading">
+                        <input
+                          type="checkbox"
+                          name="teachingLevels"
+                          value="1"
+                        />
+                      </span>
+                      <span class="trailing">1 AEP</span>
+                    </li>
+                    <li class="select-list-item">
+                      <span class="leading">
+                        <input
+                          type="checkbox"
+                          name="teachingLevels"
+                          value="2"
+                        />
+                      </span>
+                      <span class="trailing">2 AEP</span>
+                    </li>
+                    <li class="select-list-item">
+                      <span class="leading">
+                        <input
+                          type="checkbox"
+                          name="teachingLevels"
+                          value="3"
+                        />
+                      </span>
+                      <span class="trailing">3 AEP</span>
+                    </li>
+                    <li class="select-list-item">
+                      <span class="leading">
+                        <input
+                          type="checkbox"
+                          name="teachingLevels"
+                          value="4"
+                        />
+                      </span>
+                      <span class="trailing">4 AEP</span>
+                    </li>
+                    <li class="select-list-item">
+                      <span class="leading">
+                        <input
+                          type="checkbox"
+                          name="teachingLevels"
+                          value="5"
+                        />
+                      </span>
+                      <span class="trailing">5 AEP</span>
+                    </li>
+                    <li class="select-list-item">
+                      <span class="leading">
+                        <input
+                          type="checkbox"
+                          name="teachingLevels"
+                          value="6"
+                        />
+                      </span>
+                      <span class="trailing">6 AEP</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="form-controller">
+                <label for="teachingLanguages">Langue(s) d'enseignement</label>
+                <div class="select-container">
+                  <div class="select-head teachingLanguages">
+                    <p class="selected">Langues</p>
+                    <span class="arrow"
+                      ><i class="fa-solid fa-chevron-down"></i
+                    ></span>
+                  </div>
+                  <ul class="select-list">
+                    <li class="select-list-item">
+                      <span class="leading">
+                        <input
+                          type="checkbox"
+                          name="teachingLanguages"
+                          value="arabe"
+                        />
+                      </span>
+                      <span class="trailing">Arabe</span>
+                    </li>
+                    <li class="select-list-item">
+                      <span class="leading">
+                        <input
+                          type="checkbox"
+                          name="teachingLanguages"
+                          value="français"
+                        />
+                      </span>
+                      <span class="trailing">Français</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="separator"></div> -->
+            <div class="right-content">
+              <div class="form-controller">
+                <label for="totalStudents">Nombre total des élèves</label>
+                <input
+                  autocomplete="one-time-code"
+                  required
+                  type="text"
+                  name="totalStudents"
+                  id="totalStudents"
+                />
+              </div>
+
+              <div class="form-controller">
+                <label for="regionalAcademy">Académie regionale</label>
+                <input
+                  autocomplete="one-time-code"
+                  required
+                  type="text"
+                  name="regionalAcademy"
+                  id="regionalAcademy"
+                />
+              </div>
+
+              <div class="form-controller">
+                <label for="provincialDirectory">Direction provinciale</label>
+                <input
+                  autocomplete="one-time-code"
+                  required
+                  type="text"
+                  name="provincialDirectory"
+                  id="provincialDirectory"
+                />
+              </div>
+
+              <div class="form-controller">
+                <label for="scholarSaison">Saison scolaire:</label>
+                <span class="scholar-saison"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="action-btns">
+            <button class="save-profile">Enregistrer</button>
+          </div>
+        </div>
+
+        <!-- Non obligatory fields flag -->
+        <p class="non-obligatory-field-flag">
+          <span>*</span> le champs n'est pas obligatoire
+        </p>
+      </main>
+    </div>
+
+    <script src="./.dev/shared-folder-s-t/scripts/appDataUpload.js"></script>
+    <script src="./.dev/shared-folder-s-t/scripts/recentServerUpload.js"></script>
+    <script src="./.dev/Teacher-folder/Shared-folder-t/scripts/uniqueid.js"></script>
+    <script src="./.dev/Teacher-folder/Shared-folder-t/scripts/shared-js.js"></script>
+    <script src="./.dev/Teacher-folder/Shared-folder-t/scripts/select-widget.js"></script>
+    <script src="./.dev/Teacher-folder/Shared-folder-t/scripts/scholarSaison.js"></script>
+    <script src="./.dev/Teacher-folder/Teacher_profile-page/script.js"></script>
+  </body>
+</html>

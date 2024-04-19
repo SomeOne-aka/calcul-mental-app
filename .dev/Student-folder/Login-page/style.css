@@ -1,0 +1,193 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    backdrop-filter: blur(5px) opacity(.8);
+    -webkit-backdrop-filter: blur(5px) opacity(.8);
+    height: 100vh;
+overflow: hidden;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='160' height='160' patternTransform='scale(4) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M121.5 39.5V9.169c0-2.827 1.724-4.707 3.473-5.602l.707-.362c2.086-1.068 4.702-.631 6.359 1.026l1.985 1.985c1.349 1.349 3.235 2.018 5.14 2.128 12.336 0 12.336-18.505 0-18.505M40.75 39.499V9.17c0-2.827-1.724-4.707-3.473-5.602l-.707-.362c-2.086-1.068-4.702-.631-6.359 1.026l-1.985 1.985c-1.349 1.349-3.236 2.018-5.14 2.128-12.336 0-12.336-18.505 0-18.505m146.575 111.248c0-12.337-18.505-12.337-18.505 0 .11 1.904.78 3.79 2.128 5.139l1.985 1.985c1.657 1.657 2.094 4.273 1.026 6.36l-.362.706c-.895 1.75-2.775 3.474-5.602 3.474l-30.33-.001m49.66-63.086c0 12.336-18.505 12.336-18.505 0 .11-1.904.78-3.791 2.128-5.14l1.985-1.985c1.657-1.657 2.094-4.273 1.026-6.359l-.362-.707c-.895-1.749-2.775-3.474-5.602-3.473h-30.33m19.162 130.344c12.337 0 12.337-18.505 0-18.505-1.631 0-3.99.98-5.139 2.128l-1.985 1.985c-1.656 1.656-4.274 2.094-6.36 1.027l-.706-.362c-2.086-1.069-3.474-3.258-3.474-5.602v-34.302l.001-26.228c0-2.344-1.427-4.458-3.473-5.602l-.707-.361a5.83 5.83 0 00-6.36 1.026l-1.984 1.985c-1.144 1.152-3.508 2.128-5.14 2.128-12.336 0-12.336-18.505 0-18.505 1.904.11 3.715.86 5.14 2.128l1.985 1.985a5.812 5.812 0 006.359 1.026l.707-.362c1.287-1.485 3.473-2.775 3.473-5.602v-30.33M23.086 168.343c-12.336 0-12.336-18.505 0-18.505 1.632 0 3.992.98 5.14 2.128l1.985 1.985c1.656 1.656 4.274 2.094 6.359 1.027l.707-.362c2.086-1.069 3.474-3.258 3.474-5.602l-.001-34.302V88.485c0-2.344 1.387-4.533 3.473-5.602l.707-.361c2.085-1.068 4.703-.63 6.359 1.026l1.985 1.985c1.148 1.148 3.508 2.128 5.14 2.128 12.336 0 12.336-18.505 0-18.505-1.905.11-3.791.78-5.14 2.128l-1.985 1.985c-1.657 1.657-4.273 2.094-6.36 1.026l-.706-.362c-1.75-.895-3.474-2.775-3.474-5.602v-30.33m80.75 80.749H91.17c-2.827 0-4.707 1.724-5.602 3.473l-.362.707c-1.068 2.086-.631 4.702 1.026 6.359l1.985 1.985c1.349 1.349 2.018 3.236 2.128 5.14 0 12.336-18.505 12.336-18.505 0 0-1.632.98-3.992 2.128-5.14l1.985-1.985c1.656-1.656 2.094-4.274 1.026-6.359l-.361-.707c-1.069-2.086-3.258-3.474-5.602-3.473h-60.53c-2.344 0-4.533-1.387-5.602-3.473l-.362-.707c-1.067-2.085-.63-4.703 1.027-6.359l1.985-1.985c1.148-1.148 2.128-3.508 2.128-5.14 0-12.336-18.505-12.336-18.505 0M121.5 38H91.169c-2.827 0-4.707-1.724-5.602-3.473l-.362-.707c-1.068-2.086-.631-4.702 1.026-6.359l1.985-1.985c1.349-1.349 2.018-3.235 2.128-5.14C90.344 8 71.84 8 71.84 20.337c0 1.632.977 3.994 2.128 5.14.663.66 1.343 1.305 1.985 1.985 1.608 1.703 2.003 4.23 1.026 6.36-.11.24-.233.474-.361.706C75.48 36.577 73.359 38 71.015 38H36.712L10.485 38c-2.344 0-4.533 1.387-5.602 3.473-.12.236-.24.471-.362.707-1.067 2.085-.63 4.703 1.027 6.36l1.985 1.984c1.148 1.148 2.128 3.508 2.128 5.14C9.66 68-8.844 68-8.844 55.664'  stroke-width='1' stroke='hsla(4, 90%, 58%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.main-illustration {
+    position: absolute;
+    top: 50%;
+    left: 2vw;
+    transform: translateY(-50%) scale(.85);
+    z-index: 0;
+}
+
+
+.shape {
+    position: absolute;
+}
+
+.login-form {
+    width: 50vw;
+    max-width: 700px;
+    min-width: 300px;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    right: 5vw;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    user-select: none;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    box-shadow: 0 0px 40px rgba(0,0,0, .7);
+}
+@media (max-width: 520px) {
+    .main-illustration {
+        display: none;
+    }
+    .login-form {
+        right: 50%;
+        transform: translateX(50%) translateY(-50%);
+        width: 90vw;
+    }
+}
+.no-active-exam-screen {
+    z-index: 3;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(33, 18, 18, 0.8);
+    position: relative;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.no-active-exam {
+    position: absolute;
+    top: 50%;
+    right: 5vw;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: .2rem .8rem;
+    border-radius: 5px;
+}
+
+.class-tabs-container {
+    /* background-color: #9defe2; */
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    position: sticky;
+    top: 0px;
+    right: 0;
+    width: 100%;
+}
+
+.class-tab {
+    background-color: #3075a6f2;
+    color: #fff;
+    padding: .3rem 1rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.selected-class {
+    background-color: #000000f2;
+    box-shadow: 0 0 5px rgba(0,0,0, .5);
+
+}
+
+.student-tabs-container {
+    margin-top: .3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    text-align: center;
+    gap: .5rem;
+    padding: .5rem;
+}
+
+.student-tab{
+    white-space: nowrap;
+    border: 1px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color .2s;
+    background-color: #ebf2f2;
+    margin-block: .3rem;
+}
+
+
+
+.student-tab:not(.selected-student):hover {
+    background-color: #00c9ff40;
+}
+
+.selected-student {
+    background-color: #00ff54d6;
+}
+
+.student-tab span {
+    padding: .2rem;
+    display: inline-block;
+    position: relative;
+}
+
+.student-tab span:first-child {
+    border-right: 1px solid black;
+    text-transform: capitalize;
+}
+
+.student-tab span:last-child {
+    text-transform: uppercase;
+}
+
+.student-tab .tentatives-element::after {
+    content: attr(data-tentatives);
+    font-family: monospace;
+    font-size: .9rem;
+    display: block;
+    line-height: 2.2ch;
+    width: 2.2ch;
+    height: 2.2ch;
+    background-color: red;
+    position: absolute;
+    top: -3px;
+    right: 0;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+}
+
+
+
+
+
+#submit-btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: .3rem;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+    display: none;
+}
+#submit-btn:hover {
+    background-color: rgb(125, 5, 5);
+}
